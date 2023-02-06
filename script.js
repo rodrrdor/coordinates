@@ -1,6 +1,6 @@
 const FPS = 60;
 var cnv, ctx, document;
-var cursorX, cursorY, CursorRadius = 5;
+var cursorX, cursorY, CursorRadius = 1;
 var clickX = 0, clickY = 0, strHip, strCir, strAng, textPlace = 40;
 var hip, sin, cos, cir, ang, nx, ny;
 
