@@ -22,15 +22,15 @@ function draw() {
     ctx.fillStyle="black";
     ctx.fillRect(0, 0, cnv.width, cnv.height);
 
+    ctx.font="30px Comic Sans MS";
+    line();
+    
     ctx.strokeStyle="cyan";
     ctx.fillStyle="cyan";
     ctx.beginPath();
     ctx.ellipse(cursorX, cursorY, CursorRadius, CursorRadius, 0, 0, 2 * Math.PI);
     ctx.fill();
     ctx.stroke();
-
-    ctx.font="30px Comic Sans MS";
-    line();
 }
 
 function line() {
