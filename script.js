@@ -117,7 +117,6 @@ function line() {
     ctx.stroke();
 
 
-    ctx.font="40px Comic Sans MS";
     ctx.fillStyle="cyan";
     ctx.fillText("ori:   " + clickX + ", "+ clickY, 0, textPlace * 6);
 
