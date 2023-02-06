@@ -1,6 +1,6 @@
 const FPS = 60;
 var cnv, ctx, document;
-var cursorX, cursorY, CursorRadius = 10;
+var cursorX, cursorY, CursorRadius = 5;
 var clickX = 0, clickY = 0, strHip, strCir, strAng, textPlace = 40;
 var hip, sin, cos, cir, ang, nx, ny;
 
@@ -57,7 +57,7 @@ function line() {
     strAng = strAng.slice(0, strAng.indexOf(".") + 4);
 
 
-    ctx.font="40px Comic Sans MS";
+    ctx.font="20px Comic Sans MS";
     ctx.fillStyle="green";
     ctx.fillText("x-O: " + (cursorY - clickY) * ny, 0, textPlace);
 
@@ -68,7 +68,6 @@ function line() {
     ctx.stroke();
 
 
-    ctx.font="40px Comic Sans MS";
     ctx.fillStyle="red";
     ctx.fillText("Y-O: " + (cursorX - clickX) * nx, 0, textPlace * 2);
 
@@ -79,7 +78,6 @@ function line() {
     ctx.stroke();
 
 
-    ctx.font="40px Comic Sans MS";
     ctx.fillStyle="blue";
     ctx.fillText("rad:  " + strHip, 0, textPlace * 3);
 
@@ -90,7 +88,6 @@ function line() {
     ctx.stroke();
 
 
-    ctx.font="40px Comic Sans MS";
     ctx.fillStyle="yellow";
     ctx.fillText("cir:   " + strCir, 0, textPlace * 4);
 
@@ -100,7 +97,6 @@ function line() {
     ctx.stroke();
 
 
-    ctx.font="40px Comic Sans MS";
     ctx.fillStyle="magenta";
     ctx.fillText("ang:  " + strAng, 0, textPlace * 5);
 
