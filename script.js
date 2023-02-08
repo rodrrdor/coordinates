@@ -58,10 +58,10 @@ function line() {
     strAng = strAng.slice(0, strAng.indexOf(".") + 4);
 
 
-    ctx.fillStyle="green";
+    ctx.fillStyle="lime";
     ctx.fillText("y-o:  " + (cursorY - clickY) * ny, 0, textPlace);
 
-    ctx.strokeStyle="green";
+    ctx.strokeStyle="lime";
     ctx.beginPath();
     ctx.moveTo(cursorX, clickY);
     ctx.lineTo(cursorX, cursorY);
